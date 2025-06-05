@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: #121212;
+}
+.products {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #121212;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.product-card .price {
+    padding: 0 1rem;
+    color: #20d800;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 1rem;
+    background: #00d804;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #7f837f;
+}
+
+
+.newsletter {
+    background-color: #1a1a1a;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.newsletter-form input::placeholder {
+    color: #888;
+}
+
+.newsletter-form button {
+    padding: 1rem 2rem;
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #0096c7;
+}
+.fullblack{
+  background-color: #121212;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #e0e0e0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section a:hover {
+    opacity: 1;
+    color: #00b4d8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: #00b4d8;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="fullblack"></div>
+    <section class="products">
+        <h2> TOP WARE</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/54/6d/c4/546dc46eb0510b4adb65bbcedd64dd21.jpg" alt="sweetshirt">
+                <h3> Sweetshirt</h3>
+                <p class="price">&#8377 500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/a1/8e/7e/a18e7e47fe28fa03edb3fa8e9baaf70f.jpg" alt="sleeve shirt">
+                <h3> Sleeve shirt</h3>
+                <p class="price">&#8377 800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/2d/f2/4c/2df24c4829c9253464cf8d9a1cab8fee.jpg" alt="T-shirt">
+                <h3>T-shirt</h3>
+                <p class="price">&#8377 700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/b2/60/19/b26019df8ee5cca9f45d5194f556c8bb.jpg" alt="Hoody">
+                <h3> Hoody</h3>
+                <p class="price">&#8377 600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+  </div>
+  <div class="fullblack">
+    <section class="products">
+        <h2>BOTTEM WARe</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/c0/79/63/c0796394f2fae0e0c33acd60c906d25d.jpg" alt="Fit jeans">
+                <h3>Fit Jeans</h3>
+                <p class="price">&#8377 500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/a6/e6/22/a6e6225da31468eed88fdf9a9fed8c9c.jpg" alt="Track phant">
+                <h3>Track pant</h3>
+                <p class="price">&#8377 800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/b0/9d/f7/b09df733707343a92d273464217aed34.jpg" alt="Shorts">
+                <h3>Shorts</h3>
+                <p class="price">&#8377 700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/af/73/6e/af736ec4e8a401118b18f306ec7d50ba.jpg" alt="Leather bag">
+                <h3>Formal pant</h3>
+                <p class="price">&#8377 600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+  </div>
+
+    <div class="fullblack"></div>
+    <section class="products">
+        <h2> WATCH</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/41/7f/eb/417febbbbfd386292dad4c3c5c58da9d.jpg" alt="Silver watch">
+                <h3> Silver watch</h3>
+                <p class="price">&#8377 2,568</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/d4/9b/60/d49b601eeec2734bc2a58309c8be6e8b.jpg" alt="Oleves watch">
+                <h3>Olevs watch</h3>
+                <p class="price">&#8377 1,568</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/34/91/b6/3491b6e1bdb6d0f97bef8b7a133195f0.jpg" alt="Gold watch">
+                <h3>Gold watch </h3>
+                <p class="price">&#8377 1,810</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/9d/cb/64/9dcb641e247b6f4af1c7e8e96031b0cc.jpg" alt="Charcole black watch">
+                <h3> Charcole black watch</h3>
+                <p class="price">&#8377 3,000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+  </div>
+  <div class="fullblack">
+    <section class="products">
+        <h2>GLASSES</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/bd/7a/f7/bd7af7bd322c280e2f9287f1f04d56a8.jpg" alt="Alpha square">
+                <h3>Alpha square</h3>
+                <p class="price">&#8377 900</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/7b/ff/89/7bff8911a74c9aa3aa14b7a505d2b2fe.jpg" alt="Persol">
+                <h3>Persol</h3>
+                <p class="price">&#8377 800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/a9/a7/7e/a9a77e3cc08b66b0a2269ca699c24ab3.jpg" alt="Sun glasses">
+                <h3>Sun glasses</h3>
+                <p class="price">&#8377400</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/c7/56/96/c756967d75684a8a0670ab4571126446.jpg" alt="Round">
+                <h3>Round</h3>
+                <p class="price">&#8377 1000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+  </div>
+  <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing the best shopping experience with quality products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#shop">products</a></li>
+                    <li><a href="#about">Enter</a></li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email:dsaikiranreddy2024@gmail.com</p>
+                <p>Phone: 9014842534</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShopClone. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
